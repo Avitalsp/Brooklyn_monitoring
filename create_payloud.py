@@ -33,7 +33,7 @@ def createPayloud():
                  line = line.strip()
                  x = line.split(' ')
                  if x[0] == 'COMPONENT' :
-                     serviceInstances.append({ "instanceId": "0000-0000-0000-0001","status": x[2].split(':')[1],"statusDescription": "Normal operation"})
+                     serviceInstances.append({ "instanceId": x[1] +"-0000-0000-0001","status": x[2].split(':')[1],"statusDescription": "Normal operation"})
                  elif x[0] == 'TOTAL' :
                      deployerName = (filename.split('_')[1]).split('.')[0]
                      deployerStatus = (line.split(' ')[1]).split(':')[1]
