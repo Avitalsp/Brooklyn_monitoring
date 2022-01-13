@@ -1,0 +1,3 @@
+COMPONENT VODOIS status:0 crash:0 run:3
+COMPONENT OPSHUB status:1 crash:5 run:12
+TOTAL status:0 crash:1 run:21
